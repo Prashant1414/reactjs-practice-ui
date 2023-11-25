@@ -4,6 +4,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Run the below command as per requirement
+
+	1) npx create-react-app <app-name>
+	2) npm install
+	3) npm start
+	4) npm run build
+	5) npm test
+
+Install the below plugins in VS Code
+          
+    1) Prettier -> Prettier
+    2) ES7+React/Redux.. -> dsznajder
+	3) Simple React Snippets -> Burk Holland
+
+Usefull URL's
+	 
+	1) https://transform.tools/html-to-jsx  -> to convert html to JSX
+	2) https://getbootstrap.com/docs/5.3/getting-started/introduction/  -> Get bootstrap
+
 In the project directory, you can run:
 
 ### `npm start`

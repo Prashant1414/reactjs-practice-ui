@@ -6,6 +6,8 @@ import './App.css';
 import AvatarProfile from './components/AvatarProfile';
 import Home from './components/Home';
 import RenderingList from './components/RenderingList';
+import RenderingListFilter from './components/RenderingListFilter';
+import RecipeList from './components/RecipeList';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 
@@ -17,6 +19,7 @@ function App() {
     <div>
       <Router>
         <div>
+          <div className="sidebar">
             <nav>
                 <ul>
                     <li>
@@ -28,14 +31,24 @@ function App() {
                     <li>
                       <Link to="/renderinglist"><b>RenderingList</b></Link>
                     </li>
+                    <li>
+                      <Link to="/renderinglistfilter"><b>RenderingListFilter</b></Link>
+                    </li>
+                    <li>
+                      <Link to="/recipelist"><b>RecipeList</b></Link>
+                    </li>
                 </ul>
             </nav>
+          </div>
+           <div>
             <Routes>
               <Route path="/" exact Component={Home} />
               <Route path="/avatarprofile" exact Component={AvatarProfile} />
-              <Route path="/RenderingList" exact Component={RenderingList} />
+              <Route path="/renderinglist" exact Component={RenderingList} />
+              <Route path='/renderinglistfilter' exact Component={RenderingListFilter} />
+              <Route path='/recipelist' exact Component={RecipeList} />
             </Routes>
-
+          </div>
         </div>
       </Router>
 
